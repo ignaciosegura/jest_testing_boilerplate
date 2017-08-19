@@ -1,0 +1,23 @@
+{
+  "name": "siasar-api-test",
+  "version": "1.0.0",
+  "description": "SIASAR API testing suite",
+  "main": "test.js",
+  "scripts": {
+    "test": "NODE_ENV=production jest",
+    "local": "NODE_ENV=local jest"
+  },
+  "keywords": [
+    "siasar",
+    "api",
+    "testing",
+    "jest"
+  ],
+  "author": "Ignacio Segura <nacho@isegura.es>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "jest-environment-node-debug": "^2.0.0"
+  }
+}
