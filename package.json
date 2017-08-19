@@ -4,17 +4,25 @@
   "description": "SIASAR API testing suite",
   "main": "test.js",
   "scripts": {
-    "test": "NODE_ENV=production jest",
-    "local": "NODE_ENV=local jest"
+    "test-prod": "NODE_ENV=production jest",
+    "test-dev": "NODE_ENV=development jest",
+    "test-local": "NODE_ENV=local jest"
   },
   "keywords": [
-    "siasar",
-    "api",
     "testing",
-    "jest"
+    "jest",
+    "nik nak studio"
   ],
   "author": "Ignacio Segura <nacho@isegura.es>",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "jest": {
+    "globals": {
+      "__GLOBALS__": true
+    }
+  },
   "devDependencies": {
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
