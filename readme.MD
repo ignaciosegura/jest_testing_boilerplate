@@ -22,4 +22,4 @@ brew install node
 
 Just use the provided examples in `test`folder for a starting point. Jest has a auto-discovery mechanism, so it will take any file named `*.test.js` in any folder and launch it.
 
-Jest launches tests in parallel, following no particular order. If you need some global variable to be available across all tests, you can use `__GLOBAL__`, as specifified in `package.json`. 
+Jest launches tests in parallel, every test inside their own clean environment. No information is shared between tests. If you need some global variable to be available across all tests, you can use `__GLOBAL__`, as specified in `package.json`. 
