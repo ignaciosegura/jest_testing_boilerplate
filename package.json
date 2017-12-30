@@ -4,14 +4,15 @@
   "description": "SIASAR API testing suite",
   "main": "test.js",
   "scripts": {
-    "test-prod": "NODE_ENV=production jest",
-    "test-dev": "NODE_ENV=development jest",
+    "test-prod": "NODE_ENV=prod jest",
+    "test-dev": "NODE_ENV=dev jest",
     "test-local": "NODE_ENV=local jest"
   },
   "keywords": [
+    "siasar",
+    "api",
     "testing",
-    "jest",
-    "nik nak studio"
+    "jest"
   ],
   "author": "Ignacio Segura <nacho@isegura.es>",
   "license": "MIT",

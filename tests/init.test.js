@@ -6,6 +6,6 @@ const request = require('../includes/request');
 
 it('API server is responding', async () => {
   expect.assertions(1);
-  const data = await request.getOutput('');
+  const data = await request.getRawOutput('');
   expect(data).toEqual('Services Endpoint "api_v1" has been setup successfully.');
 });

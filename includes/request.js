@@ -16,9 +16,14 @@ var request = {
       });
     });
   },
-  getOutput: function (path) {
+  getRawOutput: function (path) { // returns a raw string
     var full_path = config.api + path;
     return this.make(config.host, full_path).then(output => output);
+  },
+  getParsedOutput: function (path) { // returns a Javascript Object
+    var result = this.getRawOutput(path);
+    return Promise.resolve(result)
+      .then(JSON.parse);
   },
   getOptions: function (host, endpoint) {
     return {

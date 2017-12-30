@@ -11,7 +11,9 @@ function getHostNameFromEnv() {
       api = 'local.siasar.org';
       break;
     case 'dev':
+    case 'test':
       api = 'dev.siasar.org';
+      break;
     default:
       api = 'staging.siasar.org';
   }
@@ -26,6 +28,7 @@ var config = {
   pass: 'api_test'
 }
 
-console.log('\x1b[43m\x1b[30m Testing %s ', config.host);
+// Set a higher timeout for all tests
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 25000;
 
 module.exports = config;
